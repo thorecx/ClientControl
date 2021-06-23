@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<section class="col-sm-6 mt-4 mx-auto">
+    <h2>Nuevo Cliente</h2>
+    <div class="card">
+        <div class="card-content">
+            <form action="" class="p-2" #clientForm="ngForm" (ngSubmit)="addClient(clientForm)">
+                <div class="col-sm-12">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" class="form-control" type="text" ngModel required>
+                </div>
+                <div class="input-field col-sm-12">
+                    <label for="apellido">Apellido</label>
+                    <input id="apellido" name="apellido" class="form-control" type="text" ngModel required>
+                </div>
+                <div class="input-field col-sm-12">
+                    <label for="cedula">Cedula</label>
+                    <input id="cedula" class="form-control" type="text" name="cedula" ngModel required>
+                </div>
+                <div class="input-field col-sm-12">
+                    <label for="telefono">Telefono</label>
+                    <input id="telefono" class="form-control" name="telefono" type="text" ngModel required>
+                </div>
+                <br>
+                <button class="btn btn-primary" style="margin-right: 10px">Save</button>
+                <button class="btn btn-primary">Clean</button>
+                <br>
+            </form>
+        </div>
+    </div>
+</section>
